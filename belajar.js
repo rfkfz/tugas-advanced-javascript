@@ -17,3 +17,8 @@ for (let key of Object.keys(person)) {
 person.images.url = person.images.url.replace('red', 'blue');
 
 console.log('NO1. ', person);
+
+function displayResult1() {
+    var resultElement = document.getElementById("result");
+    resultElement.innerHTML = JSON.stringify(person);
+}

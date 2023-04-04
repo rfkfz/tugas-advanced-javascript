@@ -40,6 +40,7 @@ function totalSalary(laporan) {
     let total = 0;
     for (let key in laporan) {
         if (typeof laporan[key] === 'object') {
+            //Rekursif Disini
             total += totalSalary(laporan[key]);
         } else {
             if (key === 'salary') {
@@ -50,4 +51,10 @@ function totalSalary(laporan) {
     return total;
 }
 
-console.log('NO2. Total gaji = ', totalSalary(laporan));
+console.log('NO2. Total gaji = ' + totalSalary(laporan));
+var no2 = ('Total gaji = ' + totalSalary(laporan));
+
+function displayResult2() {
+    var resultElement = document.getElementById("result");
+    resultElement.innerHTML = no2;
+}

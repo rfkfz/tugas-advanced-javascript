@@ -16,4 +16,4 @@ for (let key of Object.keys(person)) {
 }
 person.images.url = person.images.url.replace('red', 'blue');
 
-console.log(person);
+console.log('NO1. ', person);

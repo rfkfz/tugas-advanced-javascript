@@ -50,4 +50,4 @@ function totalSalary(laporan) {
     return total;
 }
 
-console.log('Total gaji = ', totalSalary(laporan));
+console.log('NO2. Total gaji = ', totalSalary(laporan));

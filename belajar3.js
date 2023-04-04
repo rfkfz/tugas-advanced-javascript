@@ -6,7 +6,7 @@ const urls = [
 for (let i = 0; i < urls.length; i++) {
     fetch(urls[i])
         .then(data => {
-            console.log(data);
+            console.log('NO3.', data);
         })
         .catch(error => {
             console.error('Error guys!', error);
